@@ -9,8 +9,6 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!-- Should be moved to bottom of body? -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./styles.css">
     </head>
@@ -50,12 +48,21 @@
                 <div class="row SectionBody justify-content-center">
                     <div class="col">
                         <form>
+                            <div id="EmailAlertSent"  class="alert alert-success" role="alert" style="display:none">
+                                Thank you!
+                            </div>
                             <div class="mb-3">
                                 <label for="EmailNameInput" class="form-label">Your Name</label>
+                                <div id="EmailAlertName" class="alert alert-warning" role="alert" style="display:none">
+                                    Please enter a name!
+                                </div>
                                 <input type="text" class="form-control" id="EmailNameInput" placeholder="John Doe">
                             </div>
                             <div class="mb-3">
                                 <label for="EmailBodyInput" class="form-label">Your Message</label>
+                                <div id="EmailAlertBody" class="alert alert-warning" role="alert" style="display:none">
+                                    Please enter a message!
+                                </div>
                                 <textarea class="form-control" placeholder="Leave your message here..." id="EmailBodyInput" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
@@ -69,6 +76,10 @@
             <!-- Footer -->
             <div class="row Footer">(c) Something, something etc 2022.</div>
         </div>
+
+        <!-- Should be moved to bottom of body? -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
     </body>
     
 </html>
