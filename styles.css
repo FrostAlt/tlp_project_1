@@ -34,7 +34,6 @@ body
     background-color: var(--palette-section);
     /* Found here: https://stackoverflow.com/a/25942447/15190248 */
     filter:brightness(80%);
-    font-size:x-large;
     padding: 0.5rem;
 }
 
