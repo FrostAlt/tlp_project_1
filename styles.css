@@ -1,0 +1,48 @@
+
+:root
+{
+    --palette-background: #14171a;
+    --palette-section: #1E2328;
+    --palette-text: #D3D5D6;
+    --palette-primary: #607889;
+}
+
+.HomeButton
+{
+    margin: 1rem;
+}
+
+#ButtonAbout
+{
+    margin-left: 2rem;
+}
+
+.TitleText
+{
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+body
+{
+    background-color: var(--palette-background);
+    color: var(--palette-text);
+}
+
+.SectionHeader
+{
+    background-color: var(--palette-section);
+    /* Found here: https://stackoverflow.com/a/25942447/15190248 */
+    filter:brightness(80%);
+    font-size:x-large;
+    padding: 0.5rem;
+}
+
+.SectionBody
+{
+    background-color:var(--palette-section);
+    font-size:medium;
+    padding: 1rem;
+}
+
+
