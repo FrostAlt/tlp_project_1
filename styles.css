@@ -4,7 +4,13 @@
     --palette-background: #14171a;
     --palette-section: #1E2328;
     --palette-text: #D3D5D6;
-    --palette-primary: #607889;
+    --palette-primary: #005b94;
+}
+
+.btn-primary, .HomeImage
+{
+    background-color: var(--palette-primary);
+    border-color: var(--palette-primary) !important;
 }
 
 .HomeButton
@@ -31,10 +37,9 @@ body
 
 .SectionHeader
 {
-    background-color: var(--palette-section);
-    /* Found here: https://stackoverflow.com/a/25942447/15190248 */
-    filter:brightness(80%);
     padding: 0.5rem;
+    background-color: var(--palette-primary);
+    color: white;
 }
 
 .SectionBody
